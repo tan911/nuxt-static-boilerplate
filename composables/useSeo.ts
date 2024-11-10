@@ -1,19 +1,26 @@
 import { useSeoMeta } from '#imports'
 
+// NB: It's important to change the default value of every metadata here.
 export function useSeo({
     title = 'Default Title',
-    ogTitle = 'Default OG Title',
     description = 'This is the default description, let me tell you all about it.',
-    ogDescription = 'This is my amazing site, let me tell you all about it.',
-    ogImage = 'https://example.com/image.png',
+    ogTitle = 'Default Title',
+    ogDescription = 'This is the default description, let me tell you all about it.',
+    ogImageUrl = 'https://example.com/image.png',
+    twitterTitle = 'Default Title',
+    twitterDescription = 'This is the default description, let me tell you all about it.',
+    twitterImage = 'https://example.com/image.png',
 } = {}) {
     useSeoMeta({
         title,
-        ogTitle,
         description,
+        ogTitle,
         ogDescription,
-        ogImage,
+        ogImageUrl,
+        twitterTitle,
         twitterCard: 'summary_large_image',
+        twitterDescription,
+        twitterImage,
         mobileWebAppCapable: 'yes',
     })
 }

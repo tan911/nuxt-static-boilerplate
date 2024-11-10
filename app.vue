@@ -6,10 +6,13 @@ const route = useRoute()
 function initSeoMeta() {
     useSeo({
         title: route.meta.title as string,
-        ogTitle: route.meta.ogTitle as string,
+        ogTitle: route.meta.title as string,
         description: route.meta.description as string,
-        ogDescription: route.meta.ogDescription as string,
-        ogImage: route.meta.ogImage as string,
+        ogDescription: route.meta.description as string,
+        ogImageUrl: route.meta.image as string,
+        twitterTitle: route.meta.title as string,
+        twitterDescription: route.meta.description as string,
+        twitterImage: route.meta.image as string,
     })
 }
 

@@ -2,7 +2,7 @@
 definePageMeta({
     layout: 'base',
     title: 'About',
-    ogTitle: 'This Og Title in About page',
+    image: 'Image from about',
 })
 </script>
 <template>
